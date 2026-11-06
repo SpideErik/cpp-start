@@ -7,9 +7,9 @@ using std::cin, std::cout;
 
 string full_name;
 string group;
-int age = 16;
-double experience = 1.5;
-bool project_ready = false;
+int age = 17;
+double experience = 2.5;
+bool project_ready = true;
 const int complete_pair = 2;
 int complete_tasks = 0;
 
@@ -43,7 +43,7 @@ int main()
         full_name, group, age, experience, project_ready, complete_pair, complete_tasks
     );
 
-    complete_tasks += 3;
+    complete_tasks += 5;
     
     std::print(cout, 
         "Счётчик выполненных заданий после {}\n"
