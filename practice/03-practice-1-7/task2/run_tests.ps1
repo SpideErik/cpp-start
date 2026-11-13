@@ -1,11 +1,11 @@
 $tests = @(
-	"3`n20`n50",
+	"3`n20`n50`n101",
 	"0",
 	"2`n-51`n101",
 	"2`n0`n40",
 	"2`n-50`n100",
 	"11",
-	"5`n5`n5`ne`n4`n5"
+	"5`n5`n5`ne"
 )
 
 $appPath = Join-Path $PSScriptRoot "build\Debug\app.exe"
