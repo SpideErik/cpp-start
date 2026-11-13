@@ -18,7 +18,7 @@ int main()
     int tickets_cnt = 0;             ///< количество билетов
     double ticket_price = 0.0;       ///< Цена одного билета
     bool is_discount = 0;            ///< Признак скидки
-    const int discount_percent = 10; ///< скидка в %
+    const int discount_value = 0.1;  ///< скидка
 
     std::cout << "Tickets price discount (0/1): ";
     std::cin >> tickets_cnt >> ticket_price >> is_discount;
@@ -33,7 +33,7 @@ int main()
     }
 
     double base = ticket_price * tickets_cnt; ///< цена без скидки
-    double discount = (base * discount_percent / 100) * is_discount; ///< скидка
+    double discount = (base * discount_value) * is_discount; ///< скидка
     double total = base - discount;
 
     std::print(std::cout,
