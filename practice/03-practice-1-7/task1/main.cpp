@@ -18,7 +18,7 @@ int main()
     int tickets_cnt = 0;             ///< количество билетов
     double ticket_price = 0.0;       ///< Цена одного билета
     bool is_discount = 0;            ///< Признак скидки
-    const int discount_value = 0.1;  ///< скидка
+    const double discount_value = 0.1;  ///< скидка
 
     std::cout << "Tickets price discount (0/1): ";
     std::cin >> tickets_cnt >> ticket_price >> is_discount;
